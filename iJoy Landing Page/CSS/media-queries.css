@@ -1,0 +1,84 @@
+/**********
+MEDIA QUERIES
+**********/
+
+@media (min-width: 770px) {
+
+nav {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+    top: 0;
+}
+
+.menu {
+  display: inline-block;
+  padding-top: 0;
+}
+
+.menu ul {
+  display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+  padding: 20px 10px;
+}
+
+  .hamburger,
+  .close {
+    display: none;
+  }
+
+  .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container {
+    width: 500px;
+    max-width: 1000px;
+  }
+}
+
+ @media (min-width: 1014px) {
+    .name {
+      margin-right: 10px;
+    }
+
+   .name,
+   .email {
+     display: inline-block;
+     margin-bottom: 20px;
+     width: 300px;
+     max-width: 600px;
+   }
+}
+
+ @media (min-width: 1236px) {
+    nav {
+      padding: 2rem 5rem;
+    }
+
+    .menu li {
+      margin: 0 10px;
+    }
+
+    .tag-line {
+      margin: 0 auto;
+    }
+}
+
+ @media (min-width: 1700px) {
+   body {
+     margin: 0 auto;
+     width: 80vw;
+  }
+
+  .site-info {
+    width: 600px;
+    margin: 40px;
+  }
+}

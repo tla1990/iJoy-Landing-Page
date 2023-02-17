@@ -1,0 +1,338 @@
+/* BASE ELEMENTS */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 160px;
+}
+
+h1,
+h2 {
+  color: #0000b3;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+a {
+  color: #000;
+  list-style: none;
+  text-decoration: none;
+}
+
+section {
+  margin: 30px 0;
+}
+
+hr {
+  width: 90%;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+.close {
+  font-family: "Raleway", "Open Sans", sans-serif;
+}
+
+p,
+a,
+form,
+.menu,
+::placeholder {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 2.3rem);
+}
+
+h2 {
+  font-size: clamp(1.85, 3.5vw, 2rem);
+}
+
+.close {
+  font-size: 2rem;
+}
+
+.menu li {
+  font-size: clamp(1.25rem, 2vw, 1.4rem);
+}
+
+.tag-line {
+  font-size: clamp(2.3rem, 4vw, 3rem);
+}
+
+p,
+.form {
+  font-size: clamp(1.3em, 2vw, 1.4em);
+}
+
+/* CENTERED ELEMENTS */
+
+h2,
+footer,
+.menu ul,
+.tag-line,
+.form-tag,
+.link,
+.form {
+  text-align: center;
+}
+
+hr,
+.img-container,
+.form,
+.site-info,
+.video-div {
+  margin: 0 auto;
+}
+
+/* NAVIGATION  */
+
+nav,
+.menu {
+  background: #fff;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  z-index: 2;
+}
+
+.menu {
+  display: none;
+}
+
+.menu ul {
+  flex-direction: column;
+  padding: 10px 0 10px 10px;
+}
+
+.menu li {
+  list-style: none;
+  padding: 20px 0;
+}
+
+.menu li:hover {
+  border-bottom: solid #00003d 3px;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.hamburger,
+.close {
+  padding: 3px;
+  position: absolute;
+  top: .8rem;
+  right: .75em;
+}
+
+.hamburger .bar {
+  background: #000;
+  border-radius: 10px;
+  height: 4px;
+  margin: 8px;
+  width: 40px;
+}
+
+.close {
+  display: none;
+  font-weight: 700;
+}
+
+.form-tag {
+  font-weight: 500;
+  padding: 1em 0 2em 0;
+}
+
+.active {
+ transition: .3s ease-in-out;
+}
+
+#shop-container {
+ vertical-align: middle;
+}
+
+/* IMAGES / VIDEO  */
+
+img {
+ object-fit: cover;
+}
+
+img,
+video {
+  height: auto;
+  width: 100%;
+}
+
+video {
+ min-height: 100%;
+}
+
+/* SECTIONS */
+
+.tag-line {
+  margin: 3em 0;
+  padding: 10px 20px;
+}
+
+.img-container {
+  padding: 10px;
+  max-width: 400px;
+}
+
+.bio-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 30px auto;
+}
+
+.site-info,
+.video-div {
+  margin: 20px;
+  max-width: 1200px;
+}
+
+.site-info {
+  width: 500px;
+  max-width: 600px;
+}
+
+.video-div {
+  min-height: 350px;
+  width: 500px;
+  max-width: 600px;
+}
+
+.shop-links,
+.bio-section {
+ max-width: 1250px;
+}
+
+.shop-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  margin: 0 auto;
+  place-items: center;
+  padding: 10px;
+}
+
+.link {
+  margin: 20px;
+  padding: 20px 0;
+  width: 200px;
+}
+
+.link img {
+  margin-bottom: 15px;
+  width: 80px;
+}
+
+.link a {
+  border: solid #0000b3 3px;
+  border-radius: 10px;
+  color: #0000b3;
+  font-weight: 700;
+  margin-top: 30px;
+  padding: 8px;
+}
+
+.link a:hover {
+  border: solid grey 3px;
+  color: grey;
+}
+
+.link:last-child img {
+ width: 190px;
+}
+
+/* FORM */
+
+.form {
+  padding: 10px;
+  width: 80%;
+}
+
+.form-tag {
+  margin-bottom: 30px;
+}
+
+.form label {
+  padding: 5px 0;
+}
+
+.form input {
+  height: 40px;
+}
+
+.form textarea {
+ height: 200px;
+ padding-top: 8px;
+}
+
+.form textarea [contenteditable] {
+ color: #fff;
+}
+
+.form input,
+textarea {
+  background-color: lightgrey;
+  border: transparent;
+  color: #000;
+  font-size: .9em;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.form #submit,
+nav,
+video {
+  box-shadow:
+  0 0 3px 3px rgba(128,128,128, .2),
+  0 0 3px 3px rgba(128,128,128, .2);
+}
+
+.form #submit {
+  background-color: #0000b3;
+  border: transparent;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  height: 50px;
+  margin: 30px;
+  width: 180px;
+}
+
+.form #submit:hover {
+  border: solid #0000b3 3px;
+  background-color: #fff;
+  color: #0000b3;
+}
