@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,19 +11,35 @@
 
   <body>
     <nav>
+      <!--logo-->
       <div class="logo">
         <h1>iJoy Headphones</h1>
       </div>
-
+      <!--nav start-->
+      <!--menu-->
       <div class="menu active">
+        <!--ul or ol should be followed by li directly, then with your a href link as your target-->
         <ul>
-          <a href="#top" class="nav-link"><li>Home</li></a>
-          <a href="#bio" class="nav-link"><li>Why iJoy</li></a>
-          <a href="#shop-container" class="nav-link"><li>Where To Buy</li></a>
-          <a href="#contact" class="nav-link"><li>Contact Us</li></a>
+          <!--writing the title of each link can help to keep everything organized in your code, +easy to search for with cmd+F when doing large projects-->
+          <!--Home-->
+          <li>
+            <a href="#top" class="nav-link">Home</a>
+          </li>
+          <!--Why iJoy link-->
+          <li>
+            <a href="#bio" class="nav-link">Why iJoy</a>
+          </li>
+          <!--Where to Buy-->
+          <li>
+            <a href="#shop-container" class="nav-link">Where To Buy</a>
+          </li>
+          <!--Contact Us-->
+          <li>
+            <a href="#contact" class="nav-link">Contact Us</a>
+          </li>
         </ul>
       </div>
-
+      <!--hamburger menu start-->
       <div class="hamburger">
         <div class="bar bar1"></div>
         <div class="bar bar2"></div>
@@ -31,28 +47,32 @@
       </div>
       <div class="close">X</div>
     </nav>
+    <!--nav end-->
 
+    <!--main section start-->
     <main>
       <div class="wrapper">
         <section class="action">
           <div class="tag-line">
             <p>Buy <strong>iJoy</strong> for a quality listening experience!</p>
           </div>
-
+          <!--headphone image-->
           <div class="img-container">
             <img src="https://m.media-amazon.com/images/I/81fQmoyvOZL._AC_SX679_.jpg" alt="A picture of a pair of blue iJoy headphones." class="display-img">
           </div>
         </section>
 
         <hr>
-
+        <!-- Why iJoy Section -->
         <section class="bio-section" id="bio">
           <div class="site-info">
             <h2 class="why-ijoy">Why iJoy</h2>
             <p>iJoy headphones are the best headphones you will <em><strong>ever</strong></em> wear again. These headphones are cancel out noise, have a microphone, and are also sweat-proof. <br><br>So whether you're out running errands, busy at the office, or working out at the gym.</p><br>
-            <p><em><strong>These headphones are good for any occassion!</strong></em></p>
+            <!--spelling check on 72 "occasion"-->
+            <p><em><strong>These headphones are good for any occasion!</strong></em></p>
           </div>
-
+          
+          <!--video-->
           <div class="video-div">
             <video controls id="video">
               <source src="https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/v2/5a38e9da-0010-59b9-9162-8c8d82bfeacf/ShortForm-Generic-480p-16-9-1409173089793-rpcbe5.mp4" type="video/mp4">
@@ -62,45 +82,53 @@
         </section>
 
         <hr>
-                    <!-- Where to Buy Section -->
+        <!-- Where to Buy Section -->
         <section id="shop-container">
           <h2 id="where-to-buy">Where To Buy</h2>
           <div class="shop-links">
+            <!--Amazon logo-->
             <div class="link">
               <img src="https://i.postimg.cc/VvnWbky1/amazon-logo-removebg-preview.png" alt="Amazon logo"/><br>
-              <a href="https://www.amazon.com/stores/iJoyBrand/page/7273288A-FED9-4D24-B8C9-467F977357B1?ref_=ast_bln" target="_blank">Shop on Amazon</a>
+              <!--rel="noopener" on line 92 after the target is used to prevent the new tab from being able to access the window.opener of the parent, which can be a security risk –look up mdn for more info-->
+              <a href="https://www.amazon.com/stores/iJoyBrand/page/7273288A-FED9-4D24-B8C9-467F977357B1?ref_=ast_bln" target="_blank" rel="noopener">Shop on Amazon</a>
             </div>
 
+            <!--Walmart logo-->
             <div class="link">
               <img src="https://i.postimg.cc/d1X5yfLR/walmart-logo-removebg-preview.png" alt="Walmart logo"><br>
-              <a href="https://www.walmart.com/c/brand/ijoy" target="_blank">Shop at Walmart</a>
+              <!--rel="noopener" on line 98 after the target is used to prevent the new tab from being able to access the window.opener of the parent, which can be a security risk –look up mdn for more info-->
+              <a href="https://www.walmart.com/c/brand/ijoy" target="_blank" rel="noopener">Shop at Walmart</a>
             </div>
 
+            <!--Ebay logo-->
             <div class="link">
               <img src="https://i.postimg.cc/FKzbVZtT/ebay-logo-removebg-preview.png" alt="Ebay logo"><br>
-              <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=iJoy+headphones&_sacat=0" target="_blank">Shop on Ebay</a>
+              <!--rel="noopener" on line 104 after the target is used to prevent the new tab from being able to access the window.opener of the parent, which can be a security risk –look up mdn for more info-->
+              <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2047675.m570.l1313&_nkw=iJoy+headphones&_sacat=0" target="_blank" rel="noopener">Shop on Ebay</a>
             </div>
           </div>
         </section>
 
         <hr>
-                      <!-- Contact Section -->
+        <!-- Contact Section -->
         <section id="contact">
           <h2 id="contact-us">Contact Us</h2>
           <p class="form-tag">Need some additional help? Drop a line.</p>
-
           <form action="https://www.freecodecamp.com/email-submit" class="form">
 
+            <!--Name-->
             <div class="name">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="user-name" value="" placeholder="Enter your name"><br>
             </div>
 
+            <!--Email-->
             <div class="email">
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" value="" placeholder= "Enter your email"><br>
             </div>
 
+            <!--Comments-->
             <div class="comments">
             <label for="comments">Comments? Questions?</label><br>
             <textarea value="" placeholder="Enter comments/questions here..." contenteditable ="true"></textarea><br>
