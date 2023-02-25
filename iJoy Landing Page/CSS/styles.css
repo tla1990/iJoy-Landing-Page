@@ -1,5 +1,4 @@
 /* BASE ELEMENTS */
-
 *,
 *::before,
 *::after {
@@ -36,6 +35,11 @@ hr {
   width: 90%;
 }
 
+/* use the num equivalent of "bold" */
+p strong {
+  font-weight: 700; 
+}
+
 footer {
   margin-top: 50px;
   padding: 20px 0;
@@ -46,19 +50,20 @@ footer p {
 }
 
 /* TYPOGRAPHY */
-
 h1,
 h2,
 .close {
   font-family: "Raleway", "Open Sans", sans-serif;
 }
 
-p,
+/* Move "p" to the end of this list, that way it corresponds with your html code */
 a,
 form,
 .menu,
+p, 
 ::placeholder {
   font-family: "Open Sans", sans-serif;
+  font-size: clamp(1.3em, 2vw, 1.4em);
 }
 
 h1 {
@@ -81,13 +86,7 @@ h2 {
   font-size: clamp(2.3rem, 4vw, 3rem);
 }
 
-p,
-.form {
-  font-size: clamp(1.3em, 2vw, 1.4em);
-}
-
 /* CENTERED ELEMENTS */
-
 h2,
 footer,
 .menu ul,
@@ -106,8 +105,7 @@ hr,
   margin: 0 auto;
 }
 
-/* NAVIGATION  */
-
+/* NAVIGATION */
 nav,
 .menu {
   background: #fff;
@@ -177,8 +175,7 @@ nav {
  vertical-align: middle;
 }
 
-/* IMAGES / VIDEO  */
-
+/* IMAGES / VIDEO */
 img {
  object-fit: cover;
 }
@@ -193,114 +190,112 @@ video {
  min-height: 100%;
 }
 
-/* SECTIONS */
-
+/* Form sections */
 .tag-line {
   margin: 3em 0;
   padding: 10px 20px;
-}
-
-.img-container {
+  }
+  
+  .img-container {
   padding: 10px;
   max-width: 400px;
-}
-
-.bio-section {
+  }
+  
+  .bio-section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 30px auto;
-}
-
-.site-info,
-.video-div {
+  }
+  
+  .site-info,
+  .video-div {
   margin: 20px;
   max-width: 1200px;
-}
-
-.site-info {
+  }
+  
+  .site-info {
   width: 500px;
   max-width: 600px;
-}
-
-.video-div {
+  }
+  
+  .video-div {
   min-height: 350px;
   width: 500px;
   max-width: 600px;
-}
-
-.shop-links,
-.bio-section {
- max-width: 1250px;
-}
-
-.shop-links {
+  }
+  
+  .shop-links,
+  .bio-section {
+  max-width: 1250px;
+  }
+  
+  .shop-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   margin: 0 auto;
   place-items: center;
   padding: 10px;
-}
-
-.link {
+  }
+  
+  .link {
   margin: 20px;
   padding: 20px 0;
   width: 200px;
-}
-
-.link img {
+  }
+  
+  .link img {
   margin-bottom: 15px;
   width: 80px;
-}
-
-.link a {
+  }
+  
+  .link a {
   border: solid #0000b3 3px;
   border-radius: 10px;
   color: #0000b3;
   font-weight: 700;
   margin-top: 30px;
   padding: 8px;
-}
-
-.link a:hover {
+  }
+  
+  .link a:hover {
   border: solid grey 3px;
   color: grey;
-}
-
-.link:last-child img {
- width: 190px;
-}
-
-/* FORM */
-
-.form {
+  }
+  
+  .link:last-child img {
+  width: 190px;
+  }
+  
+  /* FORM */
+  .form {
   padding: 10px;
   width: 80%;
-}
-
-.form-tag {
+  }
+  
+  .form-tag {
   margin-bottom: 30px;
-}
-
-.form label {
+  }
+  
+  .form label {
   padding: 5px 0;
-}
-
-.form input {
+  }
+  
+  .form input {
   height: 40px;
-}
-
-.form textarea {
- height: 200px;
- padding-top: 8px;
-}
-
-.form textarea [contenteditable] {
- color: #fff;
-}
-
-.form input,
-textarea {
+  }
+  
+  .form textarea {
+  height: 200px;
+  padding-top: 8px;
+  }
+  
+  .form textarea [contenteditable] {
+  color: #fff;
+  }
+  
+  .form input,
+  textarea {
   background-color: lightgrey;
   border: transparent;
   color: #000;
@@ -309,17 +304,17 @@ textarea {
   padding: 10px;
   width: 100%;
   max-width: 600px;
-}
-
-.form #submit,
-nav,
-video {
+  }
+  
+  .form #submit,
+  nav,
+  video {
   box-shadow:
   0 0 3px 3px rgba(128,128,128, .2),
   0 0 3px 3px rgba(128,128,128, .2);
-}
-
-.form #submit {
+  }
+  
+  .form #submit {
   background-color: #0000b3;
   border: transparent;
   border-radius: 15px;
@@ -329,10 +324,10 @@ video {
   height: 50px;
   margin: 30px;
   width: 180px;
-}
-
-.form #submit:hover {
+  }
+  
+  .form #submit:hover {
   border: solid #0000b3 3px;
   background-color: #fff;
   color: #0000b3;
-}
+  }
